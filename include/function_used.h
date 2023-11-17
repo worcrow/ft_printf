@@ -15,6 +15,7 @@
 
 # include <stdarg.h>
 # include <stdint.h>
+# include <unistd.h>
 
 int	print_char(char c);
 int	print_string(char *str);

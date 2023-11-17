@@ -13,7 +13,7 @@ all : $(NAME)
 $(NAME) : $(OBJ)
 	ar -rcs $@ $^
 
-%.o : %.c $(HEADER)
+%.o : %.c $(HEADER) $(EXTER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean :

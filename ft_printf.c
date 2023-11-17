@@ -21,6 +21,8 @@ int	ft_printf(const char *format, ...)
 	ind = 0;
 	count = 0;
 	va_start(ap, format);
+	if (write(1, "", 1) == -1)
+		return (-1);
 	while (format[ind] != '\0')
 	{
 		if (format[ind] == '%')
